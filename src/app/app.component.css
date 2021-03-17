@@ -1,0 +1,36 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+   
+  }
+ 
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 13px;
+   
+  }
+ 
+  tr:nth-child(even) {
+    background-color: ghostwhite;
+  }
+  .drop-down{
+    margin-left: 20px;
+    height: 28px;
+  }
+  .select-label{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10%;
+  }
+  .data-table{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -1,0 +1,24 @@
+<div>
+  <label class="select-label" for="cars">Choose Filter:</label>
+<select class="drop-down" name="cars" id="cars" (change)="getFilterRecord(filterRec.value)" #filterRec>
+  <option [value]=0 >Select Filter</option>
+    <option *ngFor="let displayOptions of filterOptions"  [value]="displayOptions.value">{{displayOptions.displayItem}}</option>
+  <!-- <option value="volvo">Launch Success</option>
+  <option value="saab">Launch And Land Success</option>
+  <option value="opel">Launch Success And Land In 2014</option> -->
+</select>
+<div class="data-table">
+    <table class="center borderless">
+      <tr>
+        <th *ngFor="let head of headerElement">{{head}} </th>
+      </tr>
+      <tr *ngFor="let flightData of updatedData">
+          <td>{{flightData.flight_number}}</td>
+          <td>{{flightData.mission_name}}</td>
+          <td>{{flightData.launch_year}}</td>
+          <td>{{flightData.launch_date_local | date: 'dd/MM/yyyy'}}</td>
+          <td>{{flightData.details}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
